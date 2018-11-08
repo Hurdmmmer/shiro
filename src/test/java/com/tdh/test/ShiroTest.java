@@ -24,6 +24,7 @@ public class ShiroTest {
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken("zhang", "123");
 
+
         try {
             //4、登录，即身份验证
             subject.login(token);
